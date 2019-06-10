@@ -15,14 +15,14 @@ const footer = () => {
           rel="noopener noreferrer"
           href="https://facebook.com/erickrosetebeas"
         >
-          <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+          <FontAwesomeIcon icon={["fab", "facebook"]} />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/erick-rosete-beas-18b60b84/"
+          href="https://www.linkedin.com/in/erickrosete/"
         >
-          <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
+          <FontAwesomeIcon icon={["fab", "linkedin"]} />
         </a>
       </div>
     </footer>

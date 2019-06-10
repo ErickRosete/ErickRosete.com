@@ -1,15 +1,16 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
-import Header from "./header";
-import Footer from "./footer";
+import { faGithubSquare, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Navigation from "./Navigation/Navigation";
+// import Footer from "./footer";
 import "./layout.css";
 
-const Layout = ({ children }) => (
+
+const Layout = ({ children, navbarColor, mainMargin }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -21,13 +22,13 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      library.add([faFacebook, faLinkedin]);
+      library.add([faFacebook, faLinkedin, faGithubSquare]);
 
       return (
         <div className="layout">
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
-          <Footer />
+          <Navigation navbarColor={navbarColor} siteTitle={data.site.siteMetadata.title} />
+          <main className="main-content" style={{ margin: mainMargin }}>{children}</main>
+          {/* <Footer /> */}
         </div>
       );
     }}
