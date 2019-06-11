@@ -33,17 +33,96 @@
 }
 
 .index-banner .index-banner-info h1 {
-    font-size: calc(3.5vh + 3.5vw);
     margin: 0;
     margin-bottom: 1vh;
 }
 
 .index-banner .index-banner-info h2 {
     margin: 0;
+    text-align: center;
 }
 
 .index-banner .index-banner-info .main-line {
     width: 50%;
+}
+
+.index-about {
+    margin: 6vh 4vw;
+}
+
+.index-about h1 {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.index-about-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index-about-info img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.index-about-info .index-about-text {
+    width: 90%;
+    text-align: center;
+}
+
+.index-projects {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.index-projects h1 {
+    margin-bottom: 5vh;
+}
+
+.project-card {
+    position: relative;
+    height: 50vh;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-card img{
+    position: absolute;
+}
+
+.project-card .main-cover {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    opacity: 0.75;
+}
+
+.project-card .sec-cover {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-bg-color);
+    opacity: 0.5;
+}
+
+.project-card h2 {
+    position: absolute;
+    width: 50%;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid white;
 }
 
 .index__title {
@@ -68,5 +147,12 @@
     .index__title {
         font-size: 5rem;
         max-width: 80%;
+    }
+    .index-about-info img {
+        width: 25vw;
+        margin-bottom: 0;
+    }
+    .index-about-info .index-about-text {
+        width: 60vw;
     }
 }

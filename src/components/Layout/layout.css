@@ -34,7 +34,7 @@ h1 {
 }
 
 h1 {
-  font-size: calc(2vh + 2vw);
+  font-size: calc(3.5vh + 3.5vw);
 }
 
 h2, h3 {
@@ -43,7 +43,7 @@ h2, h3 {
 }
 
 h2 {
-  font-size: calc(1.5vh + 1.5vw);
+  font-size: 1.3rem;
 }
 
 p, span, a {
@@ -104,5 +104,11 @@ footer .social-networks svg {
   }
   .social-networks {
     margin-bottom: 0;
+  }
+  h2 {
+    font-size: calc(1.5vh + 1.5vw);
+  }
+  p, span, a {
+    font-size: calc(1.25vh + 1.25vw);
   }
 }
