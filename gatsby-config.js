@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `Erick Rosete`,
-    description: `I am a software and robotics passionate, enter to discover more about me and my projects!`,
+    description: `I am a machine learning engineer, enter to discover more about me and my projects!`,
     author: `Erick Rosete Beas`,
   },
   plugins: [
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,4 +39,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};

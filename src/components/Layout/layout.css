@@ -19,26 +19,27 @@ body {
 
 /* general */
 
-@import url('https://fonts.googleapis.com/css?family=Assistant:400,700|Libre+Baskerville:400,400i,700|Nunito:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Libre+Baskerville:400,400i,700|Nunito:400,700&display=swap");
 :root {
   --main-bg-color: #00a5e9;
-  --main-contrast-color: #0485B7;
+  --main-contrast-color: #0485b7;
   --secondary-bg-color: #3e4560;
   --secondary-contrast-color: #2d3247;
   --light-gray: #f4f4f4;
 }
 
 h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
 }
 
 h1 {
-  font-size: calc(3.5vh + 3.5vw);
+  font-size: calc(3vh + 3vw);
 }
 
-h2, h3 {
-  font-family: 'Assistant', sans-serif;
+h2,
+h3 {
+  font-family: "Assistant", sans-serif;
   font-weight: 400;
 }
 
@@ -46,8 +47,10 @@ h2 {
   font-size: 1.3rem;
 }
 
-p, span, a {
-  font-family: 'Nunito', sans-serif;
+p,
+span,
+a {
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
 
@@ -62,10 +65,11 @@ p, span, a {
 .social-networks a {
   color: white;
   font-size: calc(2.5vh + 2.5vw);
-  margin-left: .75rem;
+  margin-left: 0.75rem;
 }
 
-.social-networks a:active, .social-networks a:hover {
+.social-networks a:active,
+.social-networks a:hover {
   color: var(--main-bg-color);
 }
 
@@ -81,18 +85,20 @@ footer {
   justify-content: space-between;
 }
 
-footer span, footer a {
+footer span,
+footer a {
   color: white;
   font-size: large;
 }
 
-footer a:active, footer a:hover {
+footer a:active,
+footer a:hover {
   outline-width: 0;
   color: #e0d6ea;
 }
 
 footer .social-networks svg {
-  margin-left: .75rem;
+  margin-left: 0.75rem;
 }
 
 @media (min-width: 600px) {
@@ -108,7 +114,9 @@ footer .social-networks svg {
   h2 {
     font-size: calc(1.5vh + 1.5vw);
   }
-  p, span, a {
-    font-size: calc(1.25vh + 1.25vw);
+  p,
+  span,
+  a {
+    font-size: calc(1vh + 1vw);
   }
 }

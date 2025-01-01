@@ -1,10 +1,10 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React from "react"
+import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import logo from "../../../images/icon.png"
 import PropTypes from "prop-types"
 
-import "./Navigation.css";
+import "./Navigation.css"
 
 const navigation = props => {
   console.log(props)
@@ -25,17 +25,14 @@ const navigation = props => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link as={Link} to="/" activeClassName="active">
-              inicio
-            </Nav.Link>
-            <Nav.Link as={Link} to="/page-2" activeClassName="active">
-              pagina 2
+              Home
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     </header>
-  );
-};
+  )
+}
 
 navigation.propTypes = {
   siteTitle: PropTypes.string,
@@ -45,4 +42,4 @@ navigation.defaultProps = {
   siteTitle: ``,
 }
 
-export default navigation;
+export default navigation
